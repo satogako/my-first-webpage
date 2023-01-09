@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Oswald, sans-serif;
+} 
+
+nav ul {
+    list-style: none; /*забирає маркери навроти кожнлї строки списку*/
+    background-color: #4a4a4f;
+    text-align: center;
+    /*видаляємо будь які поля які браузер встановить за замовчуванням*/
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    /*встановлюємо висоту строки li*/
+    line-height: 40px;
+    height: 40px;
+    margin: 2.5%;
+}
+
+nav a {
+    /*забираємо підкреслення тексту посилань*/
+    text-decoration: none;
+    color: #ffff;
+    /*якщо застосувати до всього блоку (display: block;), то коли буде код з 
+    nav a:hover {
+    background-color: #ffff;
+    color: #4a4a4f;
+    }
+    при наведенні мишки змінення кольора бекграунда буде більше по висоті. застосується властивість до всього блоку <a>
+    */
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ffff;
+    color: #4a4a4f;
+    
+}
+
+.card {
+    /*our cards will float on the left and side by side*/
+    float: left;
+    /*ширина карток буде 20% від загальної ширини екрана*/
+    width: 20%;
+    margin-left: 10%; /*додаєм трохи простору зліва між картками*/
+}
+
+.card a {
+    text-align: center; /*вирівняє текст по центру*/
+}
+
+img {
+    width: 100%; /*надасть повний ромір батьківського контейнера .card який має 20% ширини екрана. 
+    Тобто зображення не буде виступати за батьківськтй контейнер*/
+    height: 180px; /*надасть всім зображенням онднакової висоти*/
+}
+
+h2 {
+    text-align: center; /*не обов'язково так як h2 уже успадкував цю властивість*/
+}
+
